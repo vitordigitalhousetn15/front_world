@@ -43,14 +43,13 @@ const countries = [
   },
 ];
 
-const API_URL = 'http://localhost:3000';
+const API_URL = "http://localhost:3000";
 
 export default {
   getCountries: async function getCountries() {
     const response = await fetch(`${API_URL}/countries`);
     const responseJson = await response.json();
 
-    console.log(responseJson)
     return responseJson;
   }
-}
+};
